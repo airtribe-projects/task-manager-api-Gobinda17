@@ -2,93 +2,124 @@
   "tasks": [
     {
       "id": 1,
+      "date": "2023-09-30",
+      "priority": "medium",
       "title": "Set up environment",
       "description": "Install Node.js, npm, and git",
       "completed": true
     },
     {
       "id": 2,
+      "date": "2023-10-1",
+      "priority": "low",
       "title": "Create a new project",
       "description": "Create a new project using the Express application generator",
       "completed": true
     },
     {
       "id": 3,
+      "date": "2023-10-2",
+      "priority": "high",
       "title": "Install nodemon",
       "description": "Install nodemon as a development dependency",
       "completed": true
     },
     {
       "id": 4,
+      "date": "2023-10-3",
+      "priority": "medium",
       "title": "Install Express",
       "description": "Install Express",
       "completed": false
     },
     {
       "id": 5,
+      "date": "2023-10-22",
+      "priority": "low",
       "title": "Install Mongoose",
       "description": "Install Mongoose",
       "completed": false
     },
     {
       "id": 6,
+      "date": "2023-10-5",
+      "priority": "medium",
       "title": "Install Morgan",
       "description": "Install Morgan",
       "completed": false
     },
     {
       "id": 7,
+      "date": "2023-10-8",
+      "priority": "low",
       "title": "Install body-parser",
       "description": "Install body-parser",
       "completed": false
     },
     {
       "id": 8,
+      "date": "2023-10-12",
+      "priority": "high",
       "title": "Install cors",
       "description": "Install cors",
       "completed": false
     },
     {
       "id": 9,
+      "date": "2023-10-14",
+      "priority": "low",
       "title": "Install passport",
       "description": "Install passport",
       "completed": false
     },
     {
       "id": 10,
+      "date": "2023-10-18",
+      "priority": "medium",
       "title": "Install passport-local",
       "description": "Install passport-local",
       "completed": false
     },
     {
       "id": 11,
+      "date": "2023-10-19",
+      "priority": "low",
       "title": "Install passport-local-mongoose",
       "description": "Install passport-local-mongoose",
       "completed": false
     },
     {
       "id": 12,
+      "date": "2023-10-20",
+      "priority": "medium",
       "title": "Install express-session",
       "description": "Install express-session",
       "completed": false
     },
     {
       "id": 13,
+      "date": "2023-10-24",
+      "priority": "medium",
       "title": "Install connect-mongo",
       "description": "Install connect-mongo",
       "completed": false
     },
     {
       "id": 14,
+      "date": "2023-10-27",
+      "priority": "high",
       "title": "Install dotenv",
       "description": "Install dotenv",
       "completed": false
     },
     {
       "id": 15,
+      "date": "2023-10-30",
+      "priority": "high",
       "title": "Install jsonwebtoken",
       "description": "Install jsonwebtoken",
       "completed": false
     }
   ]
 }
+
