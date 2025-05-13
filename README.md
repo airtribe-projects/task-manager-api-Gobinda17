@@ -39,7 +39,7 @@ This is a simple Task Manager API built with Node.js and Express.js. It allows u
 ### API Endpoints
 
 1. **Get All Tasks**
-   - **URL**: `GET http://localhost:3000/api/v1/tasks`
+   - **URL**: `GET http://localhost:3000/tasks`
    - **Query Parameters**:
      - `completed` (optional): `true` or `false` (filters tasks by completion status)
    - **Response**:
@@ -47,15 +47,12 @@ This is a simple Task Manager API built with Node.js and Express.js. It allows u
      - **Body**:
        ```json
        {
-         "status": "success",
-         "data": {
-           "tasks": [/* array of tasks */]
-         }
+         "tasks": [/* array of tasks */]
        }
        ```
 
 2. **Get a Task by ID**
-   - **URL**: `GET http://localhost:3000/api/v1/tasks/:id`
+   - **URL**: `GET http://localhost:3000/tasks/:id`
    - **Path Parameter**:
      - `id`: Task ID
    - **Response**:
@@ -63,15 +60,12 @@ This is a simple Task Manager API built with Node.js and Express.js. It allows u
      - **Body**:
        ```json
        {
-         "status": "success",
-         "data": {
-           "task": {/* task object */}
-         }
+         "task": {/* task object */}
        }
        ```
 
 3. **Get Tasks by Priority Level**
-   - **URL**: `GET http://localhost:3000/api/v1/tasks/priority/:level`
+   - **URL**: `GET http://localhost:3000/tasks/priority/:level`
    - **Path Parameter**:
      - `level`: Priority level (e.g., `high`, `medium`, `low`)
    - **Response**:
@@ -79,15 +73,12 @@ This is a simple Task Manager API built with Node.js and Express.js. It allows u
      - **Body**:
        ```json
        {
-         "status": "success",
-         "data": {
-           "task": [/* array of tasks with the specified priority */]
-         }
+         "task": [/* array of tasks with the specified priority */]
        }
        ```
 
 4. **Create a New Task**
-   - **URL**: `POST http://localhost:3000/api/v1/tasks`
+   - **URL**: `POST http://localhost:3000/tasks`
    - **Request Body**:
      ```json
      {
@@ -103,14 +94,12 @@ This is a simple Task Manager API built with Node.js and Express.js. It allows u
        ```json
        {
          "status": "success",
-         "data": {
-           "task": {/* newly created task */}
-         }
+         "message": "Task created successfully",
        }
        ```
 
 5. **Update a Task by ID**
-   - **URL**: `PUT http://localhost:3000/api/v1/tasks/:id`
+   - **URL**: `PUT http://localhost:3000/tasks/:id`
    - **Path Parameter**:
      - `id`: Task ID
    - **Request Body**:
@@ -128,18 +117,23 @@ This is a simple Task Manager API built with Node.js and Express.js. It allows u
        ```json
        {
          "status": "success",
-         "data": {
-           "task": {/* updated task */}
-         }
+         "message": "Task updated successfully",
        }
        ```
 
 6. **Delete a Task by ID**
-   - **URL**: `DELETE http://localhost:3000/api/v1/tasks/:id`
+   - **URL**: `DELETE http://localhost:3000/tasks/:id`
    - **Path Parameter**:
      - `id`: Task ID
    - **Response**:
      - **Status**: `204 No Content` (if deleted) or `404 Not Found`
+     - **Body**:
+       ```json
+       {
+         "status": "success",
+         "message": "Task deleted successfully",
+       }
+       ```
 
 
 ### How to Test the API
@@ -147,7 +141,7 @@ This is a simple Task Manager API built with Node.js and Express.js. It allows u
 1. Open Postman.
 2. Create a new request.
 3. Select the HTTP method (e.g., GET, POST, PUT, DELETE).
-4. Enter the API URL (e.g., http://localhost:3000/api/v1/tasks).
+4. Enter the API URL (e.g., http://localhost:3000/tasks).
 5. Add query parameters, path parameters, or request body as needed.
 6. Click Send to execute the request.
 7. View the response in the Postman interface.
